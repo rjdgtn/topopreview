@@ -8,8 +8,9 @@
   <body>
   <?xml version="1.0" encoding="UTF-8"?>
 
-<X3D profile='Immersive' version='3.3' x='0px' y='0px' width='1000px' height='700px'> 
+<X3D profile='Immersive' version='3.3'> 
 <Scene>
+<transform translation='-100 0 -80'>
 <Transform>
 <Shape> 
 <Appearance>
@@ -49781,22 +49782,23 @@ coordIndex ='
 -0.517923 105.132 169.505
 '/>
 </IndexedLineSet>
+</Transform>
 </Shape> 
 </Transform>
-<Viewpoint   fieldOfView='0.42'    position=' 0 0 507.779'
-   description='Up' />
-<Viewpoint   fieldOfView='0.42'    position=' 0 0 -507.779'
-   orientation=' 1 0 0 3.14159'    description='Down' />
-<Viewpoint   fieldOfView='0.42'    position=' 0 -504.085 0'
-   orientation=' 1 0 0 1.5708'    description='North' />
-<Transform rotation='0 0 1 3.14159  '><Viewpoint   fieldOfView='0.42'    position=' 0 -504.085 0'
-   orientation=' 1 0 0 1.5708'    description='South' />
-</Transform><Transform rotation='0 0 1 1.5708  '><Viewpoint   fieldOfView='0.42'    position=' 0 -470.091 0'
-   orientation=' 1 0 0 1.5708'    description='West' />
-</Transform><Transform rotation='0 0 1 -1.5708  '><Viewpoint   fieldOfView='0.42'    position=' 0 -470.091 0'
-   orientation=' 1 0 0 1.5708'    description='East' />
-</Transform>	 <Transform ><NavigationInfo headlight='true'  speed=' 20.7594'/>
- 	 </Transform ><Background skyColor='0 0 0 '/>
+        <viewpoint description='Up' position='0 0 524.603' fieldOfView='0.42'></viewpoint>
+        <viewpoint description='Down' orientation='1 0 0 3.14159' position='0 0 -524.603' fieldOfView='0.42'></viewpoint>
+        <viewpoint description='North' orientation='1 0 0 1.5708' position='0 -403.447 0' fieldOfView='0.42'></viewpoint>
+        <transform rotation='0 0 1 3.14159'>
+          <viewpoint description='South' orientation='1 0 0 1.5708' position='0 -403.447 0' fieldOfView='0.42'></viewpoint>
+        </transform>
+        <transform rotation='0 0 1 1.5708'>
+          <viewpoint description='West' orientation='1 0 0 1.5708' position='0 -406.224 0' fieldOfView='0.42'></viewpoint>
+        </transform>
+        <transform rotation='0 0 1 -1.5708'>
+          <viewpoint description='East' orientation='1 0 0 1.5708' position='0 -406.224 0' fieldOfView='0.42'></viewpoint>
+        </transform>
+        <navigationInfo speed='18.7903'></navigationInfo>
+		<background></background>
 </Scene></X3D>
 
   </body>
